@@ -53,7 +53,10 @@ These options change how the role works. This is a catch-all group, specific gro
 | openvpn_uninstall            | boolean | true, false | false             | Set to true to uninstall the OpenVPN service                                  |
 | openvpn_use_ldap             | boolean | true, false | false             | Active LDAP backend for authentication. Client certificate not needed anymore |
 ### Config fetching
-Change these options if you need to adjust how the configs are download to your local system
+Change these options if you need to adjust how the 
+
+
+are download to your local system
 | Variable                            | Type    | Choices     | Default      | Comment                                                                                                                                   |
 |-------------------------------------|---------|-------------|--------------|-------------------------------------------------------------------------------------------------------------------------------------------|
 | openvpn_fetch_client_configs        | boolean | true, false | true         | Download generated client configurations to the local system                                                                              |
@@ -134,7 +137,7 @@ These options change how OpenVPN itself works.
 |---------------------------|---------|---------|---------|------------------------------------------------------|
 | openvpn_client_config     | Boolean |         | false   | Set to true if enable client configuration directory |
 | openvpn_client_config_dir | string  |         | ccd     | Path of `client-config-dir`                          |
-| openvpn_client_configs    | dict    |         | {}      | Dict of settings custom client configs               |
+| openvpn_client_config_present    | dict    |         | {}      | Dict of settings custom client configs               |
 
 ## Logrotate
 Set your own custom logrotate options
